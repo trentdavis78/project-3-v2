@@ -4,12 +4,14 @@ import SEO from "../components/seo"
 import Parallax from "../components/parallax"
 import Section from "../components/section"
 import RowContainer from "../components/rowContainer"
-import HorzCardSm from "../components/horzCardSm";
+import HorzCardSm from "../components/horzCardSm"
+import parallax1 from "../assets/images/parallax1.jpg" 
+import parallax2 from "../assets/images/parallax2.jpg" 
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Parallax imgPath="../assets/images/parallax1.jpg" altTag="Austin Skyline" />
+    <Parallax imgPath={parallax1} altTag="Austin Skyline" />
     <Section styleName={"bg-white"}>
       <RowContainer color={"white"}>
         <h6 className="category-header">Recent Articles</h6>
@@ -19,7 +21,7 @@ const IndexPage = () => (
          <HorzCardSm />     
       </RowContainer>
     </Section>
-    <Parallax imgPath="../assets/images/parallax2.jpg" altTag="Austin Skyline" />
+    <Parallax imgPath={parallax2} altTag="Austin Skyline" />
     <Section styleName={"bg-white"}><div>Lorem ipsum dolerat</div></Section>
   </Layout>
 )
