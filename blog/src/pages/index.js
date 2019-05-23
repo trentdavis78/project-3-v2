@@ -5,8 +5,8 @@ import Parallax from "../components/parallax"
 import Section from "../components/section"
 import RowContainer from "../components/rowContainer"
 import HorzCardSm from "../components/horzCardSm"
-import parallax1 from "../assets/images/parallax1.jpg" 
-import parallax2 from "../assets/images/parallax2.jpg" 
+import parallax1 from "../images/parallax1.jpg" 
+import parallax2 from "../images/parallax2.jpg" 
 
 const IndexPage = () => (
   <Layout>
