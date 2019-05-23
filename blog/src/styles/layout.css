@@ -32,7 +32,7 @@ body {
   text-rendering: optimizeLegibility;
   }
   .bg-white {
-      background-image: url('../../public/assets/images/grey_@2X.png');
+      background-image: url('../assets/images/grey_@2X.png');
       background-repeat: repeat;      
   }
   .category-header {

@@ -9,7 +9,7 @@ import HorzCardSm from "../components/horzCardSm";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Parallax imgPath="assets/images/parallax1.jpg" altTag="Austin Skyline" />
+    <Parallax imgPath="../assets/images/parallax1.jpg" altTag="Austin Skyline" />
     <Section styleName={"bg-white"}>
       <RowContainer color={"white"}>
         <h6 className="category-header">Recent Articles</h6>
@@ -19,7 +19,7 @@ const IndexPage = () => (
          <HorzCardSm />     
       </RowContainer>
     </Section>
-    <Parallax imgPath="assets/images/parallax2.jpg" altTag="Austin Skyline" />
+    <Parallax imgPath="../assets/images/parallax2.jpg" altTag="Austin Skyline" />
     <Section styleName={"bg-white"}><div>Lorem ipsum dolerat</div></Section>
   </Layout>
 )
