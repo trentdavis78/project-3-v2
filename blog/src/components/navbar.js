@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from "gatsby"
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
-
+import logo from "../assets/images/logo.svg" 
 
 export class Navbar extends Component {
     componentDidMount() {
@@ -17,7 +17,7 @@ export class Navbar extends Component {
               background: `#003594`
             }}
         >
-         <Link to="/" className="brand-logo"><img style={{width: 150, marginLeft: 20}} src="/assets/images/logo.svg" alt="ATXPC" /></Link>
+         <Link to="/" className="brand-logo"><img style={{width: 150, marginLeft: 20}} src={logo} alt="ATXPC" /></Link>
           <a href="#!" data-target="slide-out" className="sidenav-trigger right"><i className="material-icons">menu</i></a>
           <ul className="right hide-on-med-and-down">
             <li><Link to="/">Home</Link></li>
