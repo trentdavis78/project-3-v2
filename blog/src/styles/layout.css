@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+.bg-theme {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#003594+0,0013bf+50,070075+100 */
+  background: #003594; /* Old browsers */
+  
+  }
+  .logo {
+      width: 150px;
+      margin-left: 20px;
+  }
+  .parallax-container {
+      height: 450px;
+    }
+  .overlay {
+  width: 100%;
+  }
+  
+  .h100 {
+  height: 100%;
+  }  
+  .overlay,
+  .parallax-text {
+  font-size: 80px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: .11em;
+  font-size: 2.25em;
+  text-rendering: optimizeLegibility;
+  }
+  .bg-white {
+      background-image: url('../../public/assets/images/grey_@2X.png');
+      background-repeat: repeat;      
+  }
+  .category-header {
+      padding: .75rem;
+      text-transform: uppercase;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+  }
+  .card-image {
+      overflow: hidden;
+      max-width: 50%;
+    }
+    .card-image img {
+      height: 100%;
+      object-fit: cover;
+    }
+  .latest-news {
+    margin-left: .75rem;
+  }
+  .latest-news li {
+    font-size: 1.25rem;
+    line-height: 2; 
+   
+  }
+  .latest-news li:not(:last-child) {
+  border-bottom: 1px solid #efefef;
+  }
+  .latest-news li a:link,
+  .latest-news li a:visited  {
+    color: #003594;
+  }
+  
+  .latest-news li a:hover,
+  .latest-news li a:active  {
+    color: #f50057;
+  }
+  
+  .subscribe-container {
+    background-color: #fff;
+    padding: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    opacity: .9;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .latest-news li {
+      font-size: 1rem;
+    }
+  }
+  
+  .social-div {
+    max-width: 278px;
+    margin: 2rem auto;
+  }
+  .social-div a {
+    width: 100%;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  .advert {
+    color: lightslategray;
+  }
+
+  .article-heading {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #003594;
+    margin: 0;
+  }
+
+  .article-wrapper {
+    padding: 1.5rem;
+  }
+  .article-info {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    margin:1rem 0;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: .1rem;
+  }
+
+  .article-created {
+    margin-left: 1rem;
+    padding-left: 1.1rem;
+    border-left: 1px solid lightgrey;
+  }
+
+  .article-wrapper img {
+    border-radius: 5px;
+  }
+  .article-content {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: dimgray;
+    margin-top: 3rem;    
+  }
