@@ -3,13 +3,13 @@ import { Link } from "gatsby"
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import logo from "../assets/images/logo.svg" 
-import { logout, isAuthenticated, login,getProfile } from "../utils/auth"
+import { logout, isAuthenticated, login,getProfile,getUserName } from "../utils/auth"
 
 export class Navbar extends Component {
     state = {
           text: 'Login',
           userName:'',
-          userNameDisplay:"none"
+          isUserNameDisplay:"false"
     }
 //  userName="";
 
@@ -22,7 +22,7 @@ export class Navbar extends Component {
             this.setState({
               text: 'Login',
               userName:'',
-              userNameDisplay:"none"
+              isUserNameDisplay:"false"
             });
            }
           else
@@ -33,7 +33,7 @@ export class Navbar extends Component {
             this.setState({
               text: 'Logout',
               userName:user.name,
-              userNameDisplay:"inline"
+              isUserNameDisplay:"true"
             });
 
           }
@@ -66,7 +66,7 @@ export class Navbar extends Component {
             <li><Link to="/events">Events</Link></li>
             <li><Link to="/resources">Resources</Link></li>
             <li><Link to="/services">Services</Link></li>
-           <li><label className="waves-effect waves-light btn pink accent-3" > {this.state.userName} </label></li>
+           <li><label className="waves-effect waves-light btn pink accent-3" style={{display: isAuthenticated() ? 'inline-block' : 'none' }} > {getUserName()} </label></li>
             
             <li><a className="waves-effect waves-light btn pink accent-3" id="login-trigger" onClick={this.loginClick}>{this.state.text}</a></li>
             

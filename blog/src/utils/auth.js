@@ -53,6 +53,7 @@ const setSession = (cb = () => {}) => (err, authResult) => {
     tokens.expiresAt = expiresAt
     user = authResult.idTokenPayload
     localStorage.setItem("isLoggedIn", true)
+    localStorage.setItem("usesrName", user.name)
     navigate("/")
     cb()
   }
@@ -75,8 +76,11 @@ export const silentAuth = callback => {
     return user
   }
   
-  
+  export const getUserName = () => {
+    return localStorage.getItem("usesrName");
+  }
   export const logout = () => {
     localStorage.setItem("isLoggedIn", false)
+    localStorage.setItem("usesrName","")
     auth.logout()
   }
