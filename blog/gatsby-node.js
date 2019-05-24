@@ -54,11 +54,15 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     `).then(result => {
     // Create pages for each user.
     result.data.allStrapiUser.edges.forEach(({ node }) => {
+      let userString = node.id;
+      userString = userString.toString().split('_')[1];     
+      let userDetails = "Userdetails_" + userString; 
       createPage({
         path: `/authors/${node.id}`,
         component: path.resolve(`src/templates/author.js`),
         context: {
           id: node.id,
+          user: userDetails,
         },
       })
     })

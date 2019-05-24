@@ -6,15 +6,14 @@ import RowContainer from "../components/rowContainer"
 import Img from 'gatsby-image'
 
 
-const UserTemplate = ({ data }) => (
-
+const UserTemplate = ({ data, pageContext }) => (
+    
     <Layout>
         <Section styleName={"bg-white"}>
             <RowContainer color={"white"}>
                 <div className="col s12 m6 l6 xl6">
                     <h2>{data.strapiUser.username}</h2>
                     <Img fluid={data.details.image.childImageSharp.fluid} /> 
-                   <h2>{data.details.id}</h2>
                 </div>
                 <div className="col s12 m6 l6 xl6">
                     <ul>
@@ -36,7 +35,7 @@ const UserTemplate = ({ data }) => (
 export default UserTemplate
 
 export const query = graphql`
-  query UserTemplate($id: String!) {
+  query UserTemplate($id: String!, $user: String!) {
     strapiUser(id: { eq: $id }) {
       id
       username
@@ -46,7 +45,7 @@ export const query = graphql`
         content
       }
     }
-    details: strapiUserdetails {
+    details: strapiUserdetails(id: { eq: $user }) {
         id
         image {
             childImageSharp {
