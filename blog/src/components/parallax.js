@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
 export class parallax extends Component {
-    constructor(props) {
-        super(props);
-    }
     componentDidMount() {
         let parallax = document.querySelectorAll(".parallax");
         M.Parallax.init(parallax, {});

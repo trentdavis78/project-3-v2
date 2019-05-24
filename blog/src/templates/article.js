@@ -15,7 +15,7 @@ const ArticleTemplate = ({ data }) => (
                     <div className="article-wrapper">
                         <h1 className="article-heading">{data.strapiArticle.title}</h1>
                         <div className="article-info">
-                            <span className="article-author">by <Link to={`/authors/user_${data.strapiArticle.author.id}`}>
+                            <span className="article-author">by <Link to={`/authors/User_${data.strapiArticle.author.id}`}>
                                 {data.strapiArticle.author.username}
                                 </Link></span>
                             <span className="article-created">{moment(data.strapiArticle.created_at).format("MMM DD, YYYY")}</span>
