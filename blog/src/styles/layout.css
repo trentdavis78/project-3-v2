@@ -32,7 +32,7 @@ body {
   text-rendering: optimizeLegibility;
   }
   .bg-white {
-      background-image: url('../assets/images/grey_@2X.png');
+      background-image: url('../images/grey_@2X.png');
       background-repeat: repeat;      
   }
   .category-header {
@@ -134,4 +134,12 @@ body {
     line-height: 1.7;
     color: dimgray;
     margin-top: 3rem;    
+  }
+  .card img {
+    border-radius: 2px;
+  }
+  .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    color: #003594;
+    font-weight: 700;
+   
   }
