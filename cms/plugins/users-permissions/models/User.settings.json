@@ -52,6 +52,10 @@
     "articles": {
       "collection": "article",
       "via": "author"
+    },
+    "details": {
+      "model": "userdetail",
+      "via": "user"
     }
   },
   "collectionName": "users-permissions_user"

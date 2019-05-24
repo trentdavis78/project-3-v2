@@ -11,7 +11,7 @@ const UserTemplate = ({ data }) => (
             <RowContainer color={"white"}>
                 <div className="col s12 m6 l6 xl6">
                     <h2>{data.strapiUser.username}</h2>
-                    <h2>{data.strapiUser.details.title}</h2>
+                    {/* <h2>{data.strapiUser.details.title}</h2> */}
                    
                 </div>
                 <div className="col s12 m6 l6 xl6">
@@ -30,7 +30,7 @@ const UserTemplate = ({ data }) => (
         </Section>
     </Layout>
 )
-
+  
 export default UserTemplate
 
 export const query = graphql`
@@ -42,12 +42,6 @@ export const query = graphql`
         id
         title
         content
-      }
-      details {
-          title
-          image {
-           url
-          }
       }
     }
   }
