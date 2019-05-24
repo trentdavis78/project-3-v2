@@ -5,7 +5,7 @@ export default function horzCardSm() {
         <div className="col s12 m6 l6">
           <div className="card horizontal">
             <div className="card-image">
-              <img src="https://lorempixel.com/150/150/technics/6" />
+              <img src="https://lorempixel.com/150/150/technics/6" alt="" />
             </div>
             <div className="card-stacked">
               <div className="card-content">

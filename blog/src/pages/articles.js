@@ -11,17 +11,6 @@ const Articles = ({ data }) => (
     <SEO title="Articles" />
     <Section styleName={"bg-white"}>
       <RowContainer color={"white"}>
-        {/* <ul>
-          {data.allStrapiArticle.edges.map(document => (
-            <li key={document.node.id}>
-              <h2>
-                <Link to={`/articles/${document.node.id}`}>{document.node.title}</Link>
-              </h2>
-              <Img fluid={document.node.image.childImageSharp.fluid}/>
-              <p>{document.node.content}</p>
-            </li>
-          ))}
-        </ul> */}
         <div className="row">
           <div className="col l9">
             <div className="row">

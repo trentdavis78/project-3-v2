@@ -3,6 +3,8 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Section from "../components/section"
 import RowContainer from "../components/rowContainer"
+import Img from 'gatsby-image'
+
 
 const UserTemplate = ({ data }) => (
 
@@ -11,8 +13,8 @@ const UserTemplate = ({ data }) => (
             <RowContainer color={"white"}>
                 <div className="col s12 m6 l6 xl6">
                     <h2>{data.strapiUser.username}</h2>
-                    {/* <h2>{data.strapiUser.details.title}</h2> */}
-                   
+                    <Img fluid={data.details.image.childImageSharp.fluid} /> 
+                   <h2>{data.details.id}</h2>
                 </div>
                 <div className="col s12 m6 l6 xl6">
                     <ul>
@@ -43,6 +45,25 @@ export const query = graphql`
         title
         content
       }
+    }
+    details: strapiUserdetails {
+        id
+        image {
+            childImageSharp {
+             fluid(maxWidth: 1000) {
+               base64
+               tracedSVG
+               aspectRatio
+               src
+               srcSet
+               srcWebp
+               srcSetWebp
+               sizes
+               originalImg
+               originalName
+             }
+           }
+         }
     }
   }
 ` 
