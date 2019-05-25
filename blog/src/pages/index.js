@@ -14,11 +14,11 @@ const IndexPage = () => (
     <Parallax imgPath={parallax1} altTag="Austin Skyline" />
     <Section styleName={"bg-white"}>
       <RowContainer color={"white"}>
-        <h6 className="category-header">Recent Articles</h6>
+        <h6 className="category-header">Recent Articles</h6>        
          <HorzCardSm />       
          <HorzCardSm />     
          <HorzCardSm />     
-         <HorzCardSm />     
+         <HorzCardSm />            
       </RowContainer>
     </Section>
     <Parallax imgPath={parallax2} altTag="Austin Skyline" />
