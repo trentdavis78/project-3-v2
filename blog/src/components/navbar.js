@@ -28,8 +28,6 @@ export class Navbar extends Component {
           else
           {
             const user = getProfile()
-          
-            console.log(user);
             this.setState({
               text: 'Logout',
               userName:user.name,
