@@ -7,7 +7,7 @@ const makeRequest = (graphql, request) => new Promise((resolve, reject) => {
       if (result.errors) {
         reject(result.errors)
       }
-      
+
       return result;
     })
   )
@@ -17,7 +17,7 @@ const makeRequest = (graphql, request) => new Promise((resolve, reject) => {
 // data layer is bootstrapped to let plugins create pages from data.
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-  
+
   const getArticles = makeRequest(graphql, `
     {
       allStrapiArticle {
@@ -65,7 +65,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 });
 
 // Query for articles nodes to use in creating pages.
-return getArticles,  
+return getArticles,
        getAuthors;
 };
 
