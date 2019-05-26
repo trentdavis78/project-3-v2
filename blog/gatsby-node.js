@@ -54,7 +54,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     `).then(result => { 
     // Create pages for each user.
     result.data.allStrapiUser.edges.forEach(({ node }) => {
-      let userString = node.id;
+      let userString = node.id; 
       userString = userString.toString().split('_')[1];     
       let userDetails = "Userdetails_" + userString; 
       createPage({
