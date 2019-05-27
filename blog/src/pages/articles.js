@@ -19,9 +19,9 @@ const Articles = ({ data }) => (
                   return (
                     <>
                       <div className="col s12 m8 l8 xl8">
-                        <div class={`card lg-card lg-card-${idx}`} key={document.node.id}>
+                        <div className={`card lg-card lg-card-${idx}`} key={document.node.id}>
                           <Img fluid={document.node.image.childImageSharp.fluid} />
-                          <div class="card-action">
+                          <div className="card-action">
                             <Link to={`/articles/${document.node.id}`}>{document.node.title}</Link>
                           </div>
                         </div>
@@ -31,9 +31,9 @@ const Articles = ({ data }) => (
                 } else {
                   return (
                     <div className="col s12 m4 l4 xl4">
-                      <div class="card " key={document.node.id}>
+                      <div className="card " key={document.node.id}>
                         <Img fluid={document.node.image.childImageSharp.fluid} />
-                        <div class="card-action">
+                        <div className="card-action">
                           <Link to={`/articles/${document.node.id}`}>{document.node.title}</Link>
                         </div>
                       </div>
