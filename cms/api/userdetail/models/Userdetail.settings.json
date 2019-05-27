@@ -35,6 +35,14 @@
     },
     "twitter": {
       "type": "string"
+    },
+    "github": {
+      "default": "disabled",
+      "type": "string"
+    },
+    "www": {
+      "default": "disabled",
+      "type": "string"
     }
   }
 }
