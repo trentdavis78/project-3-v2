@@ -23,6 +23,18 @@
       "model": "user",
       "via": "details",
       "plugin": "users-permissions"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
     }
   }
 }
