@@ -164,3 +164,15 @@ ul.social-icons li a {
 ul.social-icons li:not(:first-child) {
   margin-left: 2rem;
 }
+.author-articles {
+  padding-top: 0 !important;
+}
+.author-articles h5 {
+  color: #003594 !important;
+}
+.indexArticle {
+  max-height: 100px;
+  overflow: hidden;
+  width: 100%;
+  
+}

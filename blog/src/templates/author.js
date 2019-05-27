@@ -9,6 +9,9 @@ import twitter from "../images/icons/twitter.svg"
 import github from "../images/icons/github.svg" 
 import facebook from "../images/icons/facebook.svg" 
 import www from "../images/icons/www.svg"
+import ReactMarkdown from "react-markdown" 
+
+
 const UserTemplate = ({ data }) => (
 
     <Layout>
@@ -82,17 +85,26 @@ const UserTemplate = ({ data }) => (
                     </div>
                 </div>
                 <div className="col s12 m6 l6 xl6">
-                    <h5>More From This Author..</h5>
-                    <ul>
-                        {data.strapiUser.articles.map(article => (
-                            <li key={article.id}>
-                                <h6>
-                                    <Link to={`articles/Article_${article.id}`}>{article.title}</Link>
-                                </h6>
-
-                            </li>
-                        ))}
-                    </ul>
+                    <h5>Articles By This Author</h5>
+                    {data.strapiUser.articles.map(article => (
+                            <div className="col s12">
+                            <div className="card horizontal">
+                                <div className="card-stacked">
+                                <div className="card-content author-articles">
+                                    <h5>{article.title}</h5>
+                                    <p><ReactMarkdown  
+                                        source={article.content.substring(0, 50).concat("...")}
+                                        className="indexArticle"
+                                        />
+                                    </p>
+                                </div>
+                                <div className="card-action">
+                                <Link to={`articles/Article_${article.id}`}>Read More...</Link>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        ))}                    
                 </div>
             </RowContainer>
         </Section>
@@ -110,6 +122,22 @@ export const query = graphql`
         id
         title
         content
+        image {
+            childImageSharp {
+             fluid(maxWidth: 200) {
+               base64
+               tracedSVG
+               aspectRatio
+               src
+               srcSet
+               srcWebp
+               srcSetWebp
+               sizes
+               originalImg
+               originalName
+             }
+           }
+         }
       }
     }
     details: strapiUserdetails(id: { eq: $user }) {
