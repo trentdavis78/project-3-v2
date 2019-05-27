@@ -15,6 +15,7 @@
     "gatsby-source-filesystem": "^2.0.37",
     "gatsby-source-strapi": "0.0.8",
     "gatsby-transformer-sharp": "^2.1.19",
+    "i": "^0.3.6",
     "materialize-css": "^1.0.0-rc.2",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
