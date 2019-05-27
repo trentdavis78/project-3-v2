@@ -42,18 +42,19 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   });
 
   const getAuthors = makeRequest(graphql, `
-  {
-    allStrapiUser {
-      edges {
-        node {
-          id
+    {
+      allStrapiUser {
+        edges {
+          node {
+            id
+          }
         }
       }
     }
-    `).then(result => {
+    `).then(result => { 
     // Create pages for each user.
     result.data.allStrapiUser.edges.forEach(({ node }) => {
-      let userString = node.id;
+      let userString = node.id; 
       userString = userString.toString().split('_')[1];     
       let userDetails = "Userdetails_" + userString; 
       createPage({
