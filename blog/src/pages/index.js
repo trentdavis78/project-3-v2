@@ -28,11 +28,11 @@ export default class IndexPage extends React.Component {
     addToMailchimp(this.state.email) // listFields are optional if you are only capturing the email address.
       .then(data => {
         console.log(data)
-        this.state.returnData = data
+        this.setState({returnData: data});
 
       })
-      .catch(() => {
-
+      .catch((err) => {
+        console.log(err);
       })
   }
 
@@ -57,8 +57,8 @@ export default class IndexPage extends React.Component {
             <h5>Stay up to date with the latest news and events</h5>
             <form onSubmit={this._handleSubmit}>
             <div className="input-field inline">
-              <input id="emailId"  type="email" class="validate" value={this.state.email} onChange={this._handleChange} />             
-                <label for="emailId">Email</label>
+              <input id="emailId"  type="email" className="validate" value={this.state.email} onChange={this._handleChange} />             
+                <label htmlFor="emailId">Email</label>
           </div>
               <div className="input-field inline">
               <button className="waves-effect waves-light btn-flat red white-text" id="subscribme" type="submit">Subscribe</button>
@@ -66,17 +66,12 @@ export default class IndexPage extends React.Component {
               </form>
             </div>
           </Parallax>
-{/* 
-          <form onSubmit={this._handleSubmit}>
-            <Section styleName={"bg-white"}>
-              <RowContainer color={"white"}><div>
-                <input id="emailId" value={this.state.email} placeholder="Enter email id" onChange={this._handleChange} >
-                </input> <button id="subscribme" type="submit">Subscribe Me</button></div></RowContainer></Section>
-          </form> */}
+
           <Section styleName={"bg-white"}><div></div></Section>
       </Layout>
 
         )
       }
     }
-    // export default IndexPage
+
+    

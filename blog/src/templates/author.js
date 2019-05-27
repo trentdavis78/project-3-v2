@@ -34,40 +34,40 @@ const UserTemplate = ({ data }) => (
                                 <li>
                                     { //Check if message failed
                                         (data.details.linkedin === 'disabled')
-                                        ?  <img className="disabled" src={linkedin} style={{width:33,opacity:.5}} />
-                                        :  <a target="_blank" href={data.details.linkedin} alt="LinkedIn"><img src={linkedin} style={{width:33}} /></a> 
+                                        ?  <img alt="LinkedIn" className="disabled" src={linkedin} style={{width:33,opacity:.5}} />
+                                        :  <a target="_blank" rel="noopener noreferrer" href={data.details.linkedin}><img src={linkedin} style={{width:33}} alt="LinkedIn" /></a> 
                                     }
                                    
                                 </li>
                                 <li>
                                     { //Check if message failed
                                         (data.details.github === 'disabled')
-                                        ?  <img className="disabled" src={github} style={{width:33,opacity:.5}} />
-                                        :  <a target="_blank" href={data.details.github} alt="Github"><img src={github} style={{width:33}} /></a> 
+                                        ?  <img alt="Github" className="disabled" src={github} style={{width:33,opacity:.5}} />
+                                        :  <a target="_blank" rel="noopener noreferrer" href={data.details.github}><img alt="Github" src={github} style={{width:33}} /></a> 
                                     }
                                    
                                 </li>
                                 <li>
                                     { //Check if message failed
                                         (data.details.twitter === 'disabled')
-                                        ?  <img className="disabled" src={twitter} style={{width:33,opacity:.5}} />
-                                        :  <a target="_blank" href={data.details.twitter} alt="Twitter"><img src={twitter} style={{width:33}} /></a> 
+                                        ?  <img alt="Twitter" className="disabled" src={twitter} style={{width:33,opacity:.5}} />
+                                        :  <a target="_blank" rel="noopener noreferrer" href={data.details.twitter}><img alt="Twitter" src={twitter} style={{width:33}} /></a> 
                                     }
                                    
                                 </li>
                                 <li>
                                     { //Check if message failed
                                         (data.details.facebook === 'disabled')
-                                        ?  <img className="disabled" src={facebook} style={{width:33,opacity:.5}} />
-                                        :  <a target="_blank" href={data.details.facebook} alt="Facebook"><img src={facebook} style={{width:33}} /></a> 
+                                        ?  <img alt="Facebook" className="disabled" src={facebook} style={{width:33,opacity:.5}} />
+                                        :  <a target="_blank" rel="noopener noreferrer" href={data.details.facebook}><img alt="Facebook" src={facebook} style={{width:33}} /></a> 
                                     }
                                    
                                 </li>
                                 <li>
                                     { //Check if message failed
                                         (data.details.www === 'disabled')
-                                        ?  <img className="disabled" src={www} style={{width:33,opacity:.5}} />
-                                        :  <a target="_blank" href={data.details.www} alt="Website"><img src={www} style={{width:33}} /></a> 
+                                        ?  <img alt="Website" className="disabled" src={www} style={{width:33,opacity:.5}} />
+                                        :  <a target="_blank" rel="noopener noreferrer" href={data.details.www}><img alt="Website" src={www} style={{width:33}} /></a> 
                                     }
                                    
                                 </li>

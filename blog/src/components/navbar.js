@@ -58,9 +58,9 @@ export class Navbar extends Component {
          <Link to="/" className="brand-logo"><img style={{width: 150, marginLeft: 20}} src={logo} alt="ATXPC" /></Link>
           <a href="#!" data-target="slide-out" className="sidenav-trigger right"><i className="material-icons">menu</i></a>
           <ul className="right hide-on-med-and-down">
-            
+            <li><Link to="/">Home</Link></li>
             <li><Link to="/news">News</Link></li>
-            <li><Link to="/articles">Articles</Link></li><li><Link to="/">Home</Link></li>
+            <li><Link to="/articles">Articles</Link></li>
             <li><Link to="/events">Events</Link></li>
             <li><Link to="/resources">Resources</Link></li>
             <li><Link to="/services">Services</Link></li>
