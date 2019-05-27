@@ -9,13 +9,8 @@ export class parallax extends Component {
   render() {
     return (
         <div className="parallax-container">
-        <p className="white-text right-align header">
-          lobortis feugiat vivamus
-        </p>
         <div className="valign-wrapper" style={{height: "100%"}}>
-          <h1 className=" white-text overlay center-align animated bounceInLeft">
-            Lorem ipsum dolor sit amet
-          </h1>
+          {this.props.children}
           <div className="parallax lighten-1">
             <img src={this.props.imgPath} alt={this.props.altTag} />
           </div>
