@@ -6,6 +6,7 @@ import RowContainer from "../components/rowContainer"
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
+
 const Articles = ({ data }) => (
   <Layout>
     <SEO title="Articles" />

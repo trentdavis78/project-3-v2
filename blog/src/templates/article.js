@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import Img from 'gatsby-image'
 import Section from "../components/section"
 import RowContainer from "../components/rowContainer"
+import ReactMarkdown from "react-markdown" 
 
 const moment = require('moment');
 
@@ -21,7 +22,10 @@ const ArticleTemplate = ({ data }) => (
                             <span className="article-created">{moment(data.strapiArticle.created_at).format("MMM DD, YYYY")}</span>
                         </div>
                         <Img fluid={data.strapiArticle.image.childImageSharp.fluid} /> 
-                        <div className="article-content">{data.strapiArticle.content}</div>
+                        
+                        <div className="article-content">
+                          <ReactMarkdown source={data.strapiArticle.content} />
+                        </div>
                     </div>
                 </div>
                 <div className="col m3 l3 hide-on-small-only blue" style={{minHeight:600}}></div>
