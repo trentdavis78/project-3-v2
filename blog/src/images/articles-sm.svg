@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1280px" height="375px" viewBox="0 0 1280 375" enable-background="new 0 0 1280 375" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="1281" height="376"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<rect clip-path="url(#SVGID_2_)" fill="none" width="1281" height="376"/>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="215.6016" y1="68.5" x2="1495.6016" y2="68.5" gradientTransform="matrix(-1 0 0 -1 1495.6016 256.5)">
+		<stop  offset="0" style="stop-color:#F50057"/>
+		<stop  offset="0.5636" style="stop-color:#FC3083"/>
+		<stop  offset="1" style="stop-color:#F50057"/>
+	</linearGradient>
+	<rect clip-path="url(#SVGID_2_)" fill="url(#SVGID_3_)" width="1280" height="376"/>
+	<rect clip-path="url(#SVGID_2_)" fill="none" width="1281" height="376"/>
+	<g opacity="0.5" clip-path="url(#SVGID_2_)">
+		<path fill="#FFFFFF" d="M1257,24c0-2.761-2.238-5-5-5h-37c-2.762,0-5,2.239-5,5v37c0,2.761,2.238,5,5,5h37c2.762,0,5-2.239,5-5V24
+			z"/>
+		<path fill="#FFFFFF" d="M1193,71c0-2.761-2.238-5-5-5h-37c-2.762,0-5,2.239-5,5v37c0,2.761,2.238,5,5,5h37c2.762,0,5-2.239,5-5V71
+			z"/>
+		<g>
+			<g>
+				<path fill="#FFFFFF" d="M961.052,286c-3.579,14-5.485,28.752-5.485,43.92c0,98.029,79.47,177.487,177.5,177.487
+					s177.5-79.479,177.5-177.507c0-98.031-79.47-177.503-177.5-177.503c-44.931,0-85.953,16.7-117.222,44.224l-5.098-8.831
+					c32.835-28.289,75.577-45.396,122.317-45.396c103.554,0,187.5,83.945,187.5,187.5c0,103.554-83.946,187.5-187.5,187.5
+					s-187.5-83.922-187.5-187.475c0-15.137,1.807-29.92,5.191-43.92L961.052,286L961.052,286z"/>
+				<path fill="#FFFFFF" d="M1302.869,331c-0.096-94-76.168-169.824-169.997-169.824c-93.83,0-169.902,75.824-169.998,169.824
+					h-2.501c0.096-95,77.287-172.323,172.498-172.323S1305.273,236,1305.369,331H1302.869z"/>
+			</g>
+			<path fill="#FFFFFF" d="M1076,176.168v16.133c-54,22.657-92.291,76.092-92.291,138.408c0,82.842,67.058,150,149.9,150
+				c82.842,0,150.147-67.158,150.147-150c0-82.813-67.758-149.949-149.758-149.999v-15c91,0.05,164.709,73.903,164.709,164.999
+				c0,91.127-73.973,165-165.1,165c-91.126,0-164.852-73.873-164.852-165C968.759,259.96,1013,199.621,1076,176.168z"/>
+			<path fill="#FFFFFF" d="M1009.366,288.855c-17.165,52.045,0.789,111.288,47.992,144.341
+				c57.681,40.389,137.184,26.37,177.571-31.313c40.391-57.681,26.371-137.184-31.311-177.571
+				c-14.018-9.815-29.325-16.408-45.045-19.951l0.659-7.543c16.993,3.695,33.551,10.75,48.688,21.351
+				c61.075,42.765,75.918,126.943,33.152,188.019c-42.766,61.074-126.943,75.918-188.019,33.152
+				c-50.628-35.45-69.484-99.354-50.097-154.971L1009.366,288.855z"/>
+			<path fill="#FFFFFF" d="M1013.064,329.895c0,66.274,53.727,120,120,120c66.274,0,120-53.726,120-120c0-66.273-53.726-120-120-120
+				C1066.791,209.895,1013.064,263.62,1013.064,329.895z M1028.064,329.895c0-57.99,47.011-105,105-105c57.99,0,105,47.01,105,105
+				s-47.01,105-105,105C1075.075,434.895,1028.064,387.885,1028.064,329.895z"/>
+		</g>
+		<g>
+			<g>
+				<g>
+					<circle fill="#FFFFFF" cx="839.825" cy="111.895" r="4"/>
+					<circle fill="#FFFFFF" cx="822.825" cy="111.895" r="4"/>
+					<circle fill="#FFFFFF" cx="839.825" cy="124.895" r="4"/>
+					<circle fill="#FFFFFF" cx="822.825" cy="124.895" r="4"/>
+					<circle fill="#FFFFFF" cx="839.825" cy="139.895" r="4"/>
+					<circle fill="#FFFFFF" cx="822.825" cy="139.895" r="4"/>
+					<circle fill="#FFFFFF" cx="839.825" cy="152.895" r="4"/>
+					<circle fill="#FFFFFF" cx="822.825" cy="152.895" r="4"/>
+				</g>
+				<circle fill="#FFFFFF" cx="839.825" cy="166.895" r="4"/>
+				<circle fill="#FFFFFF" cx="822.825" cy="166.895" r="4"/>
+				<circle fill="#FFFFFF" cx="839.825" cy="179.895" r="4"/>
+				<circle fill="#FFFFFF" cx="822.825" cy="179.895" r="4"/>
+				<circle fill="#FFFFFF" cx="839.825" cy="194.895" r="4"/>
+				<circle fill="#FFFFFF" cx="822.825" cy="194.895" r="4"/>
+				<circle fill="#FFFFFF" cx="839.825" cy="207.895" r="4"/>
+				<circle fill="#FFFFFF" cx="822.825" cy="207.895" r="4"/>
+			</g>
+			<g>
+				<g>
+					<circle fill="#FFFFFF" cx="839.825" cy="221.895" r="4"/>
+					<circle fill="#FFFFFF" cx="822.825" cy="221.895" r="4"/>
+					<circle fill="#FFFFFF" cx="839.825" cy="234.895" r="4"/>
+					<circle fill="#FFFFFF" cx="822.825" cy="234.895" r="4"/>
+					<circle fill="#FFFFFF" cx="839.825" cy="249.895" r="4"/>
+					<circle fill="#FFFFFF" cx="822.825" cy="249.895" r="4"/>
+					<circle fill="#FFFFFF" cx="839.825" cy="262.895" r="4"/>
+					<circle fill="#FFFFFF" cx="822.825" cy="262.895" r="4"/>
+				</g>
+				<circle fill="#FFFFFF" cx="839.825" cy="276.895" r="4"/>
+				<circle fill="#FFFFFF" cx="822.825" cy="276.895" r="4"/>
+				<circle fill="#FFFFFF" cx="839.825" cy="289.895" r="4"/>
+				<circle fill="#FFFFFF" cx="822.825" cy="289.895" r="4"/>
+				<circle fill="#FFFFFF" cx="839.825" cy="304.895" r="4"/>
+				<circle fill="#FFFFFF" cx="822.825" cy="304.895" r="4"/>
+				<circle fill="#FFFFFF" cx="839.825" cy="317.895" r="4"/>
+				<circle fill="#FFFFFF" cx="822.825" cy="317.895" r="4"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<g>
+					<circle fill="#FFFFFF" cx="790.825" cy="36.895" r="4"/>
+					<circle fill="#FFFFFF" cx="773.825" cy="36.895" r="4"/>
+					<circle fill="#FFFFFF" cx="790.825" cy="49.895" r="4"/>
+					<circle fill="#FFFFFF" cx="773.825" cy="49.895" r="4"/>
+					<circle fill="#FFFFFF" cx="790.825" cy="64.895" r="4"/>
+					<circle fill="#FFFFFF" cx="773.825" cy="64.895" r="4"/>
+					<circle fill="#FFFFFF" cx="790.825" cy="77.895" r="4"/>
+					<circle fill="#FFFFFF" cx="773.825" cy="77.895" r="4"/>
+				</g>
+				<circle fill="#FFFFFF" cx="790.825" cy="91.895" r="4"/>
+				<circle fill="#FFFFFF" cx="773.825" cy="91.895" r="4"/>
+				<circle fill="#FFFFFF" cx="790.825" cy="104.895" r="4"/>
+				<circle fill="#FFFFFF" cx="773.825" cy="104.895" r="4"/>
+				<circle fill="#FFFFFF" cx="790.825" cy="119.895" r="4"/>
+				<circle fill="#FFFFFF" cx="773.825" cy="119.895" r="4"/>
+				<circle fill="#FFFFFF" cx="790.825" cy="132.895" r="4"/>
+				<circle fill="#FFFFFF" cx="773.825" cy="132.895" r="4"/>
+			</g>
+			<g>
+				<g>
+					<circle fill="#FFFFFF" cx="790.825" cy="146.895" r="4"/>
+					<circle fill="#FFFFFF" cx="773.825" cy="146.895" r="4"/>
+					<circle fill="#FFFFFF" cx="790.825" cy="159.895" r="4"/>
+					<circle fill="#FFFFFF" cx="773.825" cy="159.895" r="4"/>
+					<circle fill="#FFFFFF" cx="790.825" cy="174.895" r="4"/>
+					<circle fill="#FFFFFF" cx="773.825" cy="174.895" r="4"/>
+					<circle fill="#FFFFFF" cx="790.825" cy="187.895" r="4"/>
+					<circle fill="#FFFFFF" cx="773.825" cy="187.895" r="4"/>
+				</g>
+				<circle fill="#FFFFFF" cx="790.825" cy="201.895" r="4"/>
+				<circle fill="#FFFFFF" cx="773.825" cy="201.895" r="4"/>
+				<circle fill="#FFFFFF" cx="790.825" cy="214.895" r="4"/>
+				<circle fill="#FFFFFF" cx="773.825" cy="214.895" r="4"/>
+				<circle fill="#FFFFFF" cx="790.825" cy="229.895" r="4"/>
+				<circle fill="#FFFFFF" cx="773.825" cy="229.895" r="4"/>
+				<circle fill="#FFFFFF" cx="790.825" cy="242.895" r="4"/>
+				<circle fill="#FFFFFF" cx="773.825" cy="242.895" r="4"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<path fill="#FFFFFF" d="M647.079,159c3.579-14,5.486-28.857,5.486-44.025c0-98.029-79.471-177.54-177.5-177.54
+					c-98.031,0-177.5,79.451-177.5,177.48c0,98.03,79.469,177.489,177.5,177.489c44.93,0,85.952-16.706,117.221-44.229l5.098,8.827
+					c-32.835,28.289-75.578,45.395-122.317,45.395c-103.553,0-187.5-83.945-187.5-187.5c0-103.553,83.947-187.5,187.5-187.5
+					c103.553,0,187.5,84.027,187.5,187.58c0,15.137-1.807,30.025-5.191,44.025L647.079,159L647.079,159z"/>
+				<path fill="#FFFFFF" d="M305.262,114c0.096,94,76.168,169.824,169.997,169.824c93.83,0,169.902-75.824,169.998-169.824h2.501
+					c-0.096,95-77.287,172.323-172.498,172.323S302.857,209,302.762,114H305.262z"/>
+			</g>
+			<path fill="#FFFFFF" d="M533,268.621v-16.133c54-22.657,91.856-76.092,91.856-138.408c0-82.842-67.274-150-150.118-150
+				c-82.842,0-149.823,67.158-149.823,150c0,82.813,67.084,149.949,150.084,149.999v15c-91-0.05-165.143-73.903-165.143-164.999
+				c0-91.127,73.754-165,164.881-165c91.127,0,165.177,73.873,165.177,165C639.916,184.829,595,245.168,533,268.621z"/>
+			<path fill="#FFFFFF" d="M598.765,155.934c17.164-52.045-0.789-111.289-47.991-144.341
+				C493.091-28.796,413.589-14.777,373.2,42.904c-40.39,57.681-26.371,137.184,31.311,177.573
+				c14.019,9.814,29.324,16.407,45.045,19.951l-0.659,7.541c-16.992-3.693-33.552-10.75-48.688-21.35
+				c-61.074-42.765-75.917-126.943-33.152-188.018c42.766-61.075,126.943-75.918,188.019-33.153
+				c50.628,35.45,69.484,99.355,50.097,154.971L598.765,155.934z"/>
+			<path fill="#FFFFFF" d="M595.065,114.895c0-66.274-53.727-120-120-120c-66.274,0-120,53.726-120,120s53.726,120,120,120
+				C541.339,234.895,595.065,181.169,595.065,114.895z M580.065,114.895c0,57.99-47.011,105-105,105c-57.99,0-105-47.01-105-105
+				c0-57.99,47.01-105,105-105C533.055,9.895,580.065,56.904,580.065,114.895z"/>
+		</g>
+		
+			<rect x="41.593" y="-104.004" transform="matrix(0.8192 -0.5736 0.5736 0.8192 15.6074 64.505)" fill="#FFFFFF" width="137.007" height="223.012"/>
+		<polygon fill="#FFFFFF" points="181.158,297 196.158,270.5 181.158,244 151.158,244 136.158,270.5 151.158,297 		"/>
+		<polygon fill="#FFFFFF" points="121.158,271 136.158,244.5 121.158,218 91.158,218 76.158,244.5 91.158,271 		"/>
+		<polygon fill="#FFFFFF" points="126.158,333 141.158,306.5 126.158,280 96.158,280 81.158,306.5 96.158,333 		"/>
+	</g>
+	<rect clip-path="url(#SVGID_2_)" fill="none" width="1281" height="376"/>
+	<rect x="1" clip-path="url(#SVGID_2_)" fill="none" width="1280" height="376"/>
+	<rect clip-path="url(#SVGID_2_)" fill="none" width="1281" height="376"/>
+	
+		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="215.6016" y1="68.5" x2="1495.6016" y2="68.5" gradientTransform="matrix(-1 0 0 -1 1495.6016 256.5)">
+		<stop  offset="0" style="stop-color:#F50057"/>
+		<stop  offset="0.0132" style="stop-color:#F40157"/>
+		<stop  offset="0.4252" style="stop-color:#DA0F5F"/>
+		<stop  offset="0.6727" style="stop-color:#D11562"/>
+		<stop  offset="0.7775" style="stop-color:#D61260"/>
+		<stop  offset="0.9042" style="stop-color:#E5095C"/>
+		<stop  offset="1" style="stop-color:#F50057"/>
+	</linearGradient>
+	
+		<rect y="98" opacity="0.3" clip-path="url(#SVGID_2_)" fill="url(#SVGID_4_)" enable-background="new    " width="1280" height="180"/>
+	<rect clip-path="url(#SVGID_2_)" fill="none" width="1281" height="376"/>
+	<rect x="1" clip-path="url(#SVGID_2_)" fill="none" width="1280" height="376"/>
+</g>
+</svg>

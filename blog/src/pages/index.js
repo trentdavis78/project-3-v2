@@ -4,10 +4,17 @@ import SEO from "../components/seo"
 import Parallax from "../components/parallax"
 import Section from "../components/section"
 import RowContainer from "../components/rowContainer"
-import HorzCardSm from "../components/horzCardSm"
 import parallax1 from "../images/parallax1.jpg"
 import parallax2 from "../images/parallax2.jpg"
+import articleImg from "../images/articles.jpg"
 import addToMailchimp from 'gatsby-plugin-mailchimp'
+import FeatureBox from "../components/featureBox"
+import servicesImg from "../images/services.svg"
+import articlesImg from "../images/articles.svg"
+import resourcesImg from "../images/resources.svg"
+import servicesImgSm from "../images/services-sm.svg"
+import articlesImgSm from "../images/articles-sm.svg"
+import resourcesImgSm from "../images/resources-sm.svg"
 
 
 export default class IndexPage extends React.Component {
@@ -28,7 +35,7 @@ export default class IndexPage extends React.Component {
     addToMailchimp(this.state.email) // listFields are optional if you are only capturing the email address.
       .then(data => {
         console.log(data)
-        this.setState({returnData: data});
+        this.setState({ returnData: data });
 
       })
       .catch((err) => {
@@ -45,33 +52,37 @@ export default class IndexPage extends React.Component {
         </Parallax>
         <Section styleName={"bg-white"}>
           <RowContainer color={"white"}>
-            <h6 className="category-header">Recent Articles</h6>
-            <HorzCardSm />
-            <HorzCardSm />
-            <HorzCardSm />
-            <HorzCardSm />
+            <FeatureBox title="services" imageSm={servicesImgSm} image={servicesImg} deg="105deg" txtcolor="#fff"  bgcolor="1,87,155"  icon="arrow_forward" btncss="indigo darken-4 btn-bottom">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur sagittis lectus nec auctor. Nunc a lobortis massa. Integer libero justo, tempus sit amet velit eu, facilisis mattis nisl.
+            </FeatureBox>
+            <FeatureBox title="articles" imageSm={articlesImgSm} image={articlesImg} deg="-105deg" align="right" txtcolor="#fff" bgcolor="245,0,87" icon="arrow_forward" btncss="pink darken-4 btn-right btn-bottom">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur sagittis lectus nec auctor. Nunc a lobortis massa. Integer libero justo, tempus sit amet velit eu, facilisis mattis nisl.
+              </FeatureBox>
+            <FeatureBox title="resources" imageSm={resourcesImgSm} image={resourcesImg} deg="105deg" txtcolor="#fff" bgcolor="0,200,83" icon="lock" btncss=" green darken-2 btn-bottom">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur sagittis lectus nec auctor. Nunc a lobortis massa. Integer libero justo, tempus sit amet velit eu, facilisis mattis nisl.
+              </FeatureBox>
           </RowContainer>
         </Section>
         <Parallax imgPath={parallax2} altTag="Congress Bridge">
           <div className="subscribe-container">
             <h5>Stay up to date with the latest news and events</h5>
             <form onSubmit={this._handleSubmit}>
-            <div className="input-field inline">
-              <input id="emailId"  type="email" className="validate" value={this.state.email} onChange={this._handleChange} />             
-                <label htmlFor="emailId">Email</label>
-          </div>
               <div className="input-field inline">
-              <button className="waves-effect waves-light btn-flat red white-text" id="subscribme" type="submit">Subscribe</button>
+                <input id="emailId" type="email" className="validate" value={this.state.email} onChange={this._handleChange} />
+                <label htmlFor="emailId">Email</label>
               </div>
-              </form>
-            </div>
-          </Parallax>
+              <div className="input-field inline">
+                <button className="waves-effect waves-light btn-flat red white-text" id="subscribme" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </Parallax>
 
-          <Section styleName={"bg-white"}><div></div></Section>
+        <Section styleName={"bg-white"}><div></div></Section>
       </Layout>
 
-        )
-      }
-    }
+    )
+  }
+}
 
-    
+

@@ -56,7 +56,12 @@ export default Articles
 
 export const pageQuery = graphql`  
   query IndexQuery {
-    allStrapiArticle {
+    allStrapiArticle(
+      sort: {
+        fields: created_at
+        order: DESC
+      }
+    ) {
       edges {
         node {
           id
