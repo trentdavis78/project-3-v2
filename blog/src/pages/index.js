@@ -6,7 +6,6 @@ import Section from "../components/section"
 import RowContainer from "../components/rowContainer"
 import parallax1 from "../images/parallax1.jpg"
 import parallax2 from "../images/parallax2.jpg"
-import articleImg from "../images/articles.jpg"
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import FeatureBox from "../components/featureBox"
 import servicesImg from "../images/services.svg"
@@ -15,7 +14,10 @@ import resourcesImg from "../images/resources.svg"
 import servicesImgSm from "../images/services-sm.svg"
 import articlesImgSm from "../images/articles-sm.svg"
 import resourcesImgSm from "../images/resources-sm.svg"
-
+import UserCard from "../components/userCard";
+import user1img from "../images/User_1.jpg"
+import user2img from "../images/User_2.jpg"
+import user3img from "../images/User_3.jpg"
 
 export default class IndexPage extends React.Component {
   // Since `addToMailchimp` returns a promise, you
@@ -78,7 +80,14 @@ export default class IndexPage extends React.Component {
           </div>
         </Parallax>
 
-        <Section styleName={"bg-white"}><div></div></Section>
+        <Section styleName={"bg-white"}>
+        <RowContainer color={"white"}>
+          <h3 style={{padding:"2rem", textAlign:"center"}}>Meet The Team</h3>
+            <UserCard user={"User_1"} userImg={user1img} userName="Trent Davis" userTitle={"Frontend Developer"} userTagline={"Evil Genius"} />             
+            <UserCard user={"User_2"} userImg={user2img} userName="Chandni Patel" userTitle={"Backend Developer"} userTagline={"Auth Master"} />
+            <UserCard user={"User_3"} userImg={user3img} userName="Penny Arnold" userTitle={"Lead Content Creator"}  userTagline={"Writing Wizard"} />
+        </RowContainer>
+        </Section>
       </Layout>
 
     )
