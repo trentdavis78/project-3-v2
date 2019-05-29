@@ -50,18 +50,18 @@ export default class IndexPage extends React.Component {
       <Layout>
         <SEO title="Home" />
         <Parallax imgPath={parallax1} altTag="Austin Skyline">
-          <h1>Lorem ipsum</h1>
+          <h1>All Things Tech in Austin, Texas</h1>
         </Parallax>
         <Section styleName={"bg-white"}>
           <RowContainer color={"white"}>
             <FeatureBox title="services" imageSm={servicesImgSm} image={servicesImg} deg="105deg" txtcolor="#fff"  bgcolor="1,87,155"  icon="arrow_forward" btncss="indigo darken-4 btn-bottom">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur sagittis lectus nec auctor. Nunc a lobortis massa. Integer libero justo, tempus sit amet velit eu, facilisis mattis nisl.
+            Services include coordinating and communicating with customers to plan web development projects from concept through completion, utilizing a variety of web development tools and technology.  We provide web solutions and develop web sites and web applications based on specific business needs for promotions, presentations, customer service and online services. We perform validation of completed sites including the debugging and testing of code and are responsible for quality assurance of finished websites including the validation of web forms and links.
             </FeatureBox>
             <FeatureBox title="articles" imageSm={articlesImgSm} image={articlesImg} deg="-105deg" align="right" txtcolor="#fff" bgcolor="245,0,87" icon="arrow_forward" btncss="pink darken-4 btn-right btn-bottom">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur sagittis lectus nec auctor. Nunc a lobortis massa. Integer libero justo, tempus sit amet velit eu, facilisis mattis nisl.
+            Check out the latest blogs from our Austin homegrown tech team. We  focus on industry trends, advancing technology and corporate marketing transitions affecting the Austin tech community.  
               </FeatureBox>
             <FeatureBox title="resources" imageSm={resourcesImgSm} image={resourcesImg} deg="105deg" txtcolor="#fff" bgcolor="0,200,83" icon="lock" btncss=" green darken-2 btn-bottom">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur sagittis lectus nec auctor. Nunc a lobortis massa. Integer libero justo, tempus sit amet velit eu, facilisis mattis nisl.
+            Subscribe to ATXPC.com to receive supplemental resources designed to help you become Employer Competitive so that you stand out in the competitive technical marketplace, and resources specifically selected to help develop your skills in coding languages and web development tools.  
               </FeatureBox>
           </RowContainer>
         </Section>
