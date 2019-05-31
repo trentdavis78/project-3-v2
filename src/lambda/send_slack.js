@@ -5,10 +5,8 @@ exports.handler = async (event, context) => {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
-  console.log(event.body)
-  const body = JSON.parse(event.body)
+  const body = JSON.parse(event.body);
 
-  console.log(body)
   // When the method is POST, the name will no longer be in the event’s
   // queryStringParameters – it’ll be in the event body encoded as a queryString
 //   const name = event.body.name || "World";
