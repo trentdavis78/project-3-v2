@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-          endpoint: 'https://gmail.us20.list-manage.com/subscribe/post?u=ce726fbe0f812207966542af4&amp;id=b2a1a3836b', // add your MC list endpoint here; see instructions below
+          endpoint: 'https://gmail.us20.list-manage.com/subscribe/post?u=7e31377fcc1a45e0b860f6498&amp;id=ec42ef59b8', // add your MC list endpoint here; see instructions below
       },
     },
     'gatsby-transformer-sharp',
