@@ -24,7 +24,7 @@ export default function horzCardSm(props) {
           </div>
           <Modal modalId={props.modalId}>
             <h5>I would like a quote for: {props.title}</h5>      
-            <form action="/news" method="GET">
+            <form action="/message-sent" method="GET">
               <p>
                 <label>What’s your name?<br/><input type="text" name="name" /></label>
               </p>

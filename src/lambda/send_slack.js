@@ -12,7 +12,7 @@ exports.handler = async (event, context) => {
 //   const name = event.body.name || "World";
 
   // Send greeting to Slack
-  return fetch("https://hooks.slack.com/services/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", {
+  return fetch("https://hooks.slack.com/services/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", {
     headers: {
       "content-type": "application/json"
     },

@@ -55,9 +55,7 @@ export class Navbar extends Component {
           <a href="#!" data-target="slide-out" className="sidenav-trigger right"><i className="material-icons">menu</i></a>
           <ul className="right hide-on-med-and-down">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/news">News</Link></li>
             <li><Link to="/articles">Articles</Link></li>
-            <li><Link to="/events">Events</Link></li>
             <li><Link className={isAuthenticated() ? null : "disabled"} to={isAuthenticated() ? "/resources" : "/"}>Resources</Link> </li>
             <li><Link to="/services">Services</Link></li>
            <li><label className="waves-effect waves-light btn pink accent-3" style={{display: isAuthenticated() ? 'inline-block' : 'none' }} > {getUserName()} </label></li>
