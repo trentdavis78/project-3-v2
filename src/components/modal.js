@@ -15,7 +15,7 @@ export class Modal extends Component {
                 {this.props.children}
                 </div>
                 <div className="modal-footer">
-                <button className="modal-close waves-effect btn-flat">Agree</button>
+                <button className="modal-close waves-effect btn-flat">{this.props.actionText}</button>
                 </div>
             </div>
             </>

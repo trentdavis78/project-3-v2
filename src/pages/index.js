@@ -75,7 +75,7 @@ export default class IndexPage extends React.Component {
               </div>
               <div className="input-field inline">
                 <button data-target="modal1" className="waves-effect waves-light btn-flat red white-text modal-trigger" id="subscribme" type="submit">Subscribe</button>
-                <Modal modalId={"modal1"} >
+                <Modal modalId={"modal1"} actionText={"Close"} >
                   You've subscribed!
                 </Modal>
               </div>
