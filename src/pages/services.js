@@ -25,7 +25,7 @@ export class Services extends Component {
                 <HorzCardSm image={hwImg} title={"Hardware Repair"} id={"1"} modalId={"modalHw"}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur sagittis lectus nec auctor. Nunc a lobortis massa. Integer libero justo, tempus sit amet velit eu, facilisis mattis nisl.
                </HorzCardSm>
-               <HorzCardSm image={swImg} title={"Software Repair"} id={"2"} modalId={"modalHw"}>
+               <HorzCardSm image={swImg} title={"Software Repair"} id={"2"} modalId={"modalSw"}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur sagittis lectus nec auctor. Nunc a lobortis massa. Integer libero justo, tempus sit amet velit eu, facilisis mattis nisl.
                </HorzCardSm>
               </div>

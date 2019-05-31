@@ -17,7 +17,7 @@ exports.handler = async (event, context) => {
       "content-type": "application/json"
     },
     method: "POST",
-    body: JSON.stringify({ text: `${body.name} says hello!` })
+    body: JSON.stringify({ text: `Name: ${body.name}, Phone: ${body.phone}, Email: ${body.email}, Message: ${body.message}` })
   })
     .then(() => ({
       statusCode: 200,

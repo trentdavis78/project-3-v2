@@ -11,9 +11,14 @@ export class MsgSent extends Component {
   componentDidMount() {
     const urlParams = new URLSearchParams(window.location.search);
     const name = urlParams.get('name');
-    console.log(name);
+    const phone = urlParams.get('phone');
+    const email = urlParams.get('email');
+    const message = urlParams.get('message');
     axios.post('/.netlify/functions/send_slack', {
-      name: name
+      name,
+      phone,
+      email,
+      message
 })
 
   }
