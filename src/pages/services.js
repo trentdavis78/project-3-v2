@@ -18,10 +18,11 @@ const Services = ({ data }) => (
           <div className="col l12 xl12">
             <div className="row">
               <HorzCardSm image={hwImg} title={"Hardware Repair"} id={"1"}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur sagittis lectus nec auctor. Nunc a lobortis massa. Integer libero justo, tempus sit amet velit eu, facilisis mattis nisl.
+              Computer and server repairs and maintenance. Services include building or configuring new hardware, installing and updating packages, and creating and maintaining computer networks.
+
              </HorzCardSm>
              <HorzCardSm image={swImg} title={"Software Repair"} id={"2"}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur sagittis lectus nec auctor. Nunc a lobortis massa. Integer libero justo, tempus sit amet velit eu, facilisis mattis nisl.
+             Software repair services include diagnosis, data recovery, virus and spyware removal, software setup and installation, wi-fi setup or troubleshooting and more.
              </HorzCardSm>
             </div>
           </div>
