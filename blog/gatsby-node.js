@@ -42,32 +42,34 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   });
 
   const getAuthors = makeRequest(graphql, `
-    {
-      allStrapiUser {
-        edges {
-          node {
+  {
+    allStrapiUser {
+      edges {
+        node {
+          id
+          details {
             id
           }
         }
       }
     }
-    `).then(result => { 
-    // Create pages for each user.
-    result.data.allStrapiUser.edges.forEach(({ node }) => {
-      let userString = node.id; 
-      userString = userString.toString().split('_')[1];     
-      let userDetails = "Userdetails_" + userString; 
-      createPage({
-        path: `/authors/${node.id}`,
-        component: path.resolve(`src/templates/author.js`),
-        context: {
-          id: node.id,
-          user: userDetails,
-        },
+  }
+    `).then(result => {
+      // Create pages for each article.
+      result.data.allStrapiUser.edges.forEach(({ node }) => {
+        let userString = node.details.id; 
+        userDetails = "Userdetails_" + userString; 
+        createPage({
+          path: `/authors/${node.id}`,
+          component: path.resolve(`src/templates/author.js`),
+          context: {
+            id: node.id,
+            user: userDetails,
+          },
+        })
       })
-    })
-  });
-  
+    });
+
   // Query for articles nodes to use in creating pages.
   return getArticles,  
          getAuthors;

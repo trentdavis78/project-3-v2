@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-strapi',
       options: {
-        apiURL: 'https://atxpc-cms.herokuapp.com',
+        apiURL: 'http://strapi-cms-core.caprover.atxpc.com',
         contentTypes: [ // List of the Content Types you want to be able to request from Gatsby.
           'article',
           'user',

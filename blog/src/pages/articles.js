@@ -58,7 +58,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     allStrapiArticle(
       sort: {
-        fields: created_at
+        fields: createdAt
         order: DESC
       }
     ) {

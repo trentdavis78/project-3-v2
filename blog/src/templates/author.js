@@ -25,52 +25,52 @@ const UserTemplate = ({ data }) => (
                                 top:"2rem",
                                 marginBottom:50
                                 }}>
-                            <Img style={{borderRadius:"50%"}} fluid={data.details.image.childImageSharp.fluid} />
+                             <Img  style={{borderRadius:"50%"}} fluid={data.strapiUserdetails.image.childImageSharp.fluid} />
                         </div>
                         <div className="card-content">
                             <span className="card-title activator grey-text text-darken-4">
-                                {data.strapiUser.username}<i className="material-icons right">more_vert</i>
+                                {data.strapiUserdetails.username}<i className="material-icons right">more_vert</i>
                             </span>
-                            <p style={{padding:".33rem .2rem 1rem"}}>{data.details.title}</p>
+                            <p style={{padding:".33rem .2rem 1rem"}}>{data.strapiUserdetails.title}</p>
                             <div class="card-action">
                             <ul className="social-icons">
                                 <li>
                                     { //Check if message failed
-                                        (data.details.linkedin === 'disabled')
+                                        (data.strapiUserdetails.linkedin === 'disabled')
                                         ?  <img alt="LinkedIn" className="disabled" src={linkedin} style={{width:33,opacity:.5}} />
-                                        :  <a target="_blank" rel="noopener noreferrer" href={data.details.linkedin}><img src={linkedin} style={{width:33}} alt="LinkedIn" /></a> 
+                                        :  <a target="_blank" rel="noopener noreferrer" href={data.strapiUserdetails.linkedin}><img src={linkedin} style={{width:33}} alt="LinkedIn" /></a> 
                                     }
                                    
                                 </li>
                                 <li>
                                     { //Check if message failed
-                                        (data.details.github === 'disabled')
+                                        (data.strapiUserdetails.github === 'disabled')
                                         ?  <img alt="Github" className="disabled" src={github} style={{width:33,opacity:.5}} />
-                                        :  <a target="_blank" rel="noopener noreferrer" href={data.details.github}><img alt="Github" src={github} style={{width:33}} /></a> 
+                                        :  <a target="_blank" rel="noopener noreferrer" href={data.strapiUserdetails.github}><img alt="Github" src={github} style={{width:33}} /></a> 
                                     }
                                    
                                 </li>
                                 <li>
                                     { //Check if message failed
-                                        (data.details.twitter === 'disabled')
+                                        (data.strapiUserdetails.twitter === 'disabled')
                                         ?  <img alt="Twitter" className="disabled" src={twitter} style={{width:33,opacity:.5}} />
-                                        :  <a target="_blank" rel="noopener noreferrer" href={data.details.twitter}><img alt="Twitter" src={twitter} style={{width:33}} /></a> 
+                                        :  <a target="_blank" rel="noopener noreferrer" href={data.strapiUserdetails.twitter}><img alt="Twitter" src={twitter} style={{width:33}} /></a> 
                                     }
                                    
                                 </li>
                                 <li>
                                     { //Check if message failed
-                                        (data.details.facebook === 'disabled')
+                                        (data.strapiUserdetails.facebook === 'disabled')
                                         ?  <img alt="Facebook" className="disabled" src={facebook} style={{width:33,opacity:.5}} />
-                                        :  <a target="_blank" rel="noopener noreferrer" href={data.details.facebook}><img alt="Facebook" src={facebook} style={{width:33}} /></a> 
+                                        :  <a target="_blank" rel="noopener noreferrer" href={data.strapiUserdetails.facebook}><img alt="Facebook" src={facebook} style={{width:33}} /></a> 
                                     }
                                    
                                 </li>
                                 <li>
                                     { //Check if message failed
-                                        (data.details.www === 'disabled')
+                                        (data.strapiUserdetails.www === 'disabled')
                                         ?  <img alt="Website" className="disabled" src={www} style={{width:33,opacity:.5}} />
-                                        :  <a target="_blank" rel="noopener noreferrer" href={data.details.www}><img alt="Website" src={www} style={{width:33}} /></a> 
+                                        :  <a target="_blank" rel="noopener noreferrer" href={data.strapiUserdetails.www}><img alt="Website" src={www} style={{width:33}} /></a> 
                                     }
                                    
                                 </li>
@@ -80,7 +80,7 @@ const UserTemplate = ({ data }) => (
                         
                         <div className="card-reveal">
                             <span className="card-title grey-text text-darken-4">Bio<i className="material-icons right">close</i></span>
-                            <p>{data.details.bio}</p>
+                            <p>{data.strapiUserdetails.bio}</p>
                         </div>
                     </div>
                 </div>
@@ -114,57 +114,61 @@ const UserTemplate = ({ data }) => (
 export default UserTemplate
 
 export const query = graphql`
-  query UserTemplate($id: String!, $user: String!) {
+query UserDetailsQuery($id: String!, $user: String!) 
+{ 
     strapiUser(id: { eq: $id }) {
-      id
-      username
-      articles {
         id
-        title
-        content
-        image {
-            childImageSharp {
-             fluid(maxWidth: 200) {
-               base64
-               tracedSVG
-               aspectRatio
-               src
-               srcSet
-               srcWebp
-               srcSetWebp
-               sizes
-               originalImg
-               originalName
+        username
+        articles {
+            id
+            title
+            content
+            image {
+                childImageSharp {
+                 fluid(maxWidth: 200) {
+                   base64
+                   tracedSVG
+                   aspectRatio
+                   src
+                   srcSet
+                   srcWebp
+                   srcSetWebp
+                   sizes
+                   originalImg
+                   originalName
+                 }
+               }
              }
-           }
-         }
-      }
-    }
-    details: strapiUserdetails(id: { eq: $user }) {
-        id
-        image {
-            childImageSharp {
-             fluid(maxWidth: 200) {
-               base64
-               tracedSVG
-               aspectRatio
-               src
-               srcSet
-               srcWebp
-               srcSetWebp
-               sizes
-               originalImg
-               originalName
-             }
-           }
-         }
-         title
-         bio
-         linkedin
-         facebook
-         twitter
-         github
-         www
-    }
-  }
+          }
+        }
+
+
+        strapiUserdetails(id: {eq: $user}) {
+            id
+            title
+            bio
+            linkedin
+            facebook
+            twitter
+            github
+            www
+            image {
+              childImageSharp {
+                fluid(maxWidth: 200) {
+                  base64
+                  tracedSVG
+                  aspectRatio
+                  src
+                  srcSet
+                  srcWebp
+                  srcSetWebp
+                  sizes
+                  originalImg
+                  originalName
+                }
+              }
+            }
+          }
+}
+ 
 ` 
