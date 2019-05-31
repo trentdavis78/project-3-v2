@@ -35,6 +35,7 @@ export default class IndexPage extends React.Component {
 
   _handleSubmit = e => {
     e.preventDefault();
+    this.state.email="";
     addToMailchimp(this.state.email) // listFields are optional if you are only capturing the email address.
       .then(data => {
         console.log(data)
