@@ -18,7 +18,8 @@ import UserCard from "../components/userCard";
 import user1img from "../images/User_1.jpg"
 import user2img from "../images/User_2.jpg"
 import user3img from "../images/User_3.jpg"
-import Modal from "../components/modal";
+import Modal from "../components/modal"
+
 
 export default class IndexPage extends React.Component {
   // Since `addToMailchimp` returns a promise, you
@@ -52,7 +53,7 @@ export default class IndexPage extends React.Component {
       <Layout>
         <SEO title="Home" />
         <Parallax imgPath={parallax1} altTag="Austin Skyline">
-          <h1>All Things Tech in Austin, Texas</h1>
+          <h1 className="white-text" style={{marginTop:"20%", marginLeft:40, textShadow:"2px 2px #000"}}>Everything. Austin. Tech.</h1>        
         </Parallax>
         <Section styleName={"bg-white"}>
           <RowContainer color={"white"}>
@@ -87,9 +88,9 @@ export default class IndexPage extends React.Component {
         <Section styleName={"bg-white"}>
         <RowContainer color={"white"}>
           <h3 style={{padding:"2rem", textAlign:"center"}}>Meet The Team</h3>
-            <UserCard user={"User_1"} userImg={user1img} userName="Trent Davis" userTitle={"Frontend Developer"} userTagline={"Evil Genius"} />             
-            <UserCard user={"User_2"} userImg={user2img} userName="Chandni Patel" userTitle={"Backend Developer"} userTagline={"Auth Master"} />
-            <UserCard user={"User_3"} userImg={user3img} userName="Penny Arnold" userTitle={"Lead Content Creator"}  userTagline={"Writing Wizard"} />
+            <UserCard user={"User_5cf00453b967d801f92db483"} userImg={user1img} userName="Trent Davis" userTitle={"Frontend Developer"} userTagline={"Evil Genius"} />             
+            <UserCard user={"User_5cf0a2732b6397022883496f"} userImg={user2img} userName="Chandni Patel" userTitle={"Backend Developer"} userTagline={"Auth Master"} />
+            <UserCard user={"User_5cf0a2ea2b63970228834973"} userImg={user3img} userName="Penny Arnold" userTitle={"Lead Content Creator"}  userTagline={"Writing Wizard"} />
         </RowContainer>
         </Section>
       </Layout>

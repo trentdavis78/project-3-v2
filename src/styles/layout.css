@@ -201,3 +201,8 @@ ul.social-icons li:not(:first-child) {
 .btn-right {
   right: 2rem;
 }
+.adStyle {
+  color: red;
+  z-index: 2;
+  font-size: 30rem;
+}

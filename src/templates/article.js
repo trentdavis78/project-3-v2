@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import Section from "../components/section"
 import RowContainer from "../components/rowContainer"
 import ReactMarkdown from "react-markdown" 
+import adImg from '../images/yourAdHere.svg'
 
 const moment = require('moment');
 
@@ -28,7 +29,11 @@ const ArticleTemplate = ({ data }) => (
                         </div>
                     </div>
                 </div>
-                <div className="col m3 l3 hide-on-small-only blue" style={{minHeight:600}}></div>
+                <div className="col m3 l3 hide-on-small-only">
+                  <div className="white-text indigo darken-1" style={{minHeight:548}}> 
+                      <img style={{maxWidth:242}} src={adImg} alt="Your Advertisement Could Be Here" />
+                  </div>
+                </div>
             </RowContainer>
         </Section>
     </Layout>

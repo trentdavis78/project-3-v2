@@ -5,6 +5,7 @@ import Section from "../components/section"
 import RowContainer from "../components/rowContainer"
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import adImg from '../images/yourAdHere.svg'
 
 
 const Articles = ({ data }) => (
@@ -44,7 +45,11 @@ const Articles = ({ data }) => (
               })}
             </div>
           </div>
-          <div className="col m3 l3 hide-on-small-only blue" style={{ minHeight: 600 }}></div>
+          <div className="col m3 l3 hide-on-small-only">
+            <div className="white-text pink accent-3" style={{minHeight:548}}> 
+                <img style={{maxWidth:242}} src={adImg} alt="Your Advertisement Could Be Here" />
+            </div>
+          </div>
         </div>
       </RowContainer>
     </Section>
