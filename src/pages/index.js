@@ -63,7 +63,7 @@ export default class IndexPage extends React.Component {
             <FeatureBox title="articles" imageSm={articlesImgSm} image={articlesImg} deg="-105deg" align="right" txtcolor="#fff" bgcolor="245,0,87" icon="arrow_forward" btncss="pink darken-4 btn-right btn-bottom">
             Check out the latest blogs from our Austin homegrown tech team. We  focus on industry trends, advancing technology and corporate marketing transitions affecting the Austin tech community.  
               </FeatureBox>
-            <FeatureBox title="resources" imageSm={resourcesImgSm} image={resourcesImg} deg="105deg" txtcolor="#fff" bgcolor="0,200,83" icon="lock" btncss=" green darken-2 btn-bottom">Subscribe to ATXPC.com to receive supplemental resources designed to help you become Employer Competitive so that you stand out in the tech marketplace, and receive resources specifically selected to help develop your skills in coding languages and programs.                 
+            <FeatureBox title="resources" imageSm={resourcesImgSm} image={resourcesImg} deg="105deg" txtcolor="#fff" bgcolor="0,200,83" icon="lock" btncss="disabled green darken-2 btn-bottom">Subscribe to ATXPC.com to receive supplemental resources designed to help you become Employer Competitive so that you stand out in the tech marketplace, and receive resources specifically selected to help develop your skills in coding languages and programs.                 
               </FeatureBox>
           </RowContainer>
         </Section>

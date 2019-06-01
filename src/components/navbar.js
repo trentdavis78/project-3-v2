@@ -58,7 +58,7 @@ export class Navbar extends Component {
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/articles">Articles</Link></li>
             <li><Link className={isAuthenticated() ? null : "disabled"} to={isAuthenticated() ? "/resources" : "/"}>Resources</Link> </li>
-           <li><label className="waves-effect waves-light btn pink accent-3" style={{display: isAuthenticated() ? 'inline-block' : 'none' }} > {getUserName()} </label></li>
+           {/* <li><label className="waves-effect waves-light btn pink accent-3" style={{display: isAuthenticated() ? 'inline-block' : 'none' }} > {getUserName()} </label></li> */}
            <li><a className="waves-effect waves-light btn pink accent-3" id="login-trigger" onClick={this.loginClick}>{this.state.text}</a></li>
             
           </ul>
